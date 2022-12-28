@@ -24,9 +24,9 @@ function Chair(props) {
   });
 
   // leatherTextureProps.map.repeat.set(4, 4);
-  leatherTextureProps.normalMap.repeat.set(4, 4);
-  leatherTextureProps.roughnessMap.repeat.set(4, 4);
-  leatherTextureProps.aoMap.repeat.set(4, 4);
+  leatherTextureProps.normalMap.repeat.set(2.395, 2.395);
+  leatherTextureProps.roughnessMap.repeat.set(2.395, 2.395);
+  leatherTextureProps.aoMap.repeat.set(2.395, 2.395);
 
   // leatherTextureProps.map.wrapS = leatherTextureProps.map.wrapT = THREE.RepeatWrapping;
   leatherTextureProps.normalMap.wrapS = leatherTextureProps.normalMap.wrapT = THREE.RepeatWrapping;
