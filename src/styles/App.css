@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.configurator {
+  position: fixed;
+  right: 1.4rem;
+  width: 20rem;
+  bottom: 25vh;
+  color: whitesmoke;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.configurator__section__title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.configurator__section__values {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.item__label {
+  font-size: small;
+  color: #acacac;
+  transition: .4s color;
+}
+
+.item {
+  transition: .4s opacity;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.item.item--active .item__dot {
+  border: solid 2px whitesmoke
+}
+
+.item.item--active .item__label {
+  color: whitesmoke;
+}
+
+.item__dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  border: solid 2px gray;
+}
