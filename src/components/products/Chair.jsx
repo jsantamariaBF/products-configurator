@@ -1,7 +1,7 @@
 import React from 'react';
 import { useGLTF, useTexture } from '@react-three/drei';
 import * as THREE from 'three';
-import { useCustomization } from '../contexts/Customization';
+import { useCustomization } from '../../contexts/Customization';
 
 function Chair(props) {
 

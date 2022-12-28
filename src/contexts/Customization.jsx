@@ -6,8 +6,9 @@ const CustomizationContext = createContext({});
 export const CustomizationProvider = ({ children }) => {
     const [material, setMaterial] = useState('leather');
     const [legs, setLegs] = useState(1);
-    const [chairColor, setChairColor] = useState(chairColors[0]);
-    const [cushionColor, setCushionColor] = useState(cushionColors[0]);
+    const [chairColor, setChairColor] = useState(chairColors[0].color);
+    const [cushionColor, setCushionColor] = useState(cushionColors[0].color);
+
     return (
         <CustomizationContext.Provider value={{
             material,
@@ -20,7 +21,6 @@ export const CustomizationProvider = ({ children }) => {
             setCushionColor
         }}>
             {children}
-
         </CustomizationContext.Provider>
     );
 };
